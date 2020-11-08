@@ -1,0 +1,22 @@
+<div class="container mx-auto">
+  <h1 class="text-4xl text-center mt-5">{{ title }}</h1>
+
+  <div cdkDropListGroup>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl mt-16 ml-8">Today</h2>
+        <app-todos [when]="1"></app-todos>
+      </div>
+      <div>
+        <h2 class="text-3xl mt-16 ml-8">Tomorrow</h2>
+        <app-todos [when]="2"></app-todos>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center text-gray-500 italic">
+    Powered by Angular and Tailwind CSS
+  </div>
+</div>
+
+<router-outlet></router-outlet>
