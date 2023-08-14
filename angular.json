@@ -114,6 +114,7 @@
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
+          "build" : "dsjflsfjdslfjdsfjdslfjsl"
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
             "devServerTarget": "angular10:serve"
